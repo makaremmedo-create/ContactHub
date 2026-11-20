@@ -7,9 +7,7 @@
     <link rel="icon" href="images/favicon.png" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.min.css" />
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Main Style Sheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,7 +17,6 @@
       <span class="shape shape-3 position-absolute rounded-circle"></span>
     </div>
 
-    <!-- Start header -->
     <header class="sticky-top">
       <div class="container">
         <div class="header-inner d-flex justify-content-between align-items-center">
@@ -52,10 +49,7 @@
         </div>
       </div>
     </header>
-    <!-- End header -->
-
     <main class="container">
-      <!-- Start stats section -->
       <section class="stats">
         <div class="row">
           <div class="col-6 col-md-4">
@@ -93,11 +87,9 @@
           </div>
         </div>
       </section>
-      <!-- End stats section -->
 
       <div class="d-flex content-wrapper">
         <div class="flex-grow-1 main-side">
-          <!-- Start contacts section -->
           <section class="contacts-head">
             <h2>All Contacts</h2>
             <p id="contactsText">Manage your personal and professional connections</p>
@@ -118,10 +110,8 @@
           <section>
             <div id="contactsList" class="row"></div>
           </section>
-          <!-- End contacts section -->
         </div>
 
-        <!-- Start sidebar -->
         <aside class="sidebar d-none d-xl-flex flex-column flex-shrink-0">
           <section class="side-box bg-white overflow-hidden">
             <div class="side-head fav-head d-flex align-items-center gap-3">
@@ -135,7 +125,6 @@
             </div>
             <div id="favList" class="side-list d-flex flex-column"></div>
           </section>
-
           <section class="side-box bg-white overflow-hidden">
             <div class="side-head emergency-head d-flex align-items-center gap-3">
               <div class="side-icon emergency-icon d-flex justify-content-center align-items-center">
@@ -149,10 +138,7 @@
             <div id="emergencyList" class="side-list d-flex flex-column"></div>
           </section>
         </aside>
-        <!-- End sidebar -->
       </div>
-
-      <!-- Start mobile lists -->
       <div class="mobile-lists d-xl-none">
         <section class="side-box bg-white overflow-hidden">
           <div class="side-head small-head fav-head d-flex align-items-center gap-3">
@@ -180,10 +166,7 @@
           <div id="emergencyListMobile" class="mobile-list d-grid gap-2"></div>
         </section>
       </div>
-      <!-- End mobile lists -->
     </main>
-
-    <!-- Start contact modal -->
     <div class="modal" id="contactModal" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content border-0">
@@ -193,7 +176,6 @@
               <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
-
           <div class="modal-body">
             <div class="photo-box d-flex flex-column align-items-center gap-3">
               <div id="photoPreview" class="photo-preview d-flex justify-content-center align-items-center overflow-hidden">
@@ -205,30 +187,25 @@
                 <input type="file" id="photoInput" accept="image/*" class="d-none" onchange="previewPhoto()" />
               </label>
             </div>
-
             <div class="field">
               <label for="contactName">Full Name <span>*</span></label>
               <input type="text" id="contactName" class="form-control" placeholder="Enter full name" oninput="validateName()" />
               <p id="nameError" class="error-msg d-none">Name should contain only letters and spaces (2-50 characters)</p>
             </div>
-
             <div class="field">
               <label for="contactPhone">Phone Number <span>*</span></label>
               <input type="text" id="contactPhone" class="form-control" placeholder="e.g., 01012345678" oninput="validatePhone()" />
               <p id="phoneError" class="error-msg d-none">Please enter a valid Egyptian phone number</p>
             </div>
-
             <div class="field">
               <label for="contactEmail">Email Address</label>
               <input type="text" id="contactEmail" class="form-control" placeholder="name@example.com" oninput="validateEmail()" />
               <p id="emailError" class="error-msg d-none">Please enter a valid email address</p>
             </div>
-
             <div class="field">
               <label for="contactAddress">Address</label>
               <input type="text" id="contactAddress" class="form-control" placeholder="Enter address" />
             </div>
-
             <div class="field">
               <label for="contactGroup">Group</label>
               <select id="contactGroup" class="form-control">
@@ -240,12 +217,10 @@
                 <option value="other">Other</option>
               </select>
             </div>
-
             <div class="field">
               <label for="contactNotes">Notes</label>
               <textarea id="contactNotes" rows="2" class="form-control" placeholder="Add notes about this contact"></textarea>
             </div>
-
             <div class="checks d-flex flex-wrap">
               <label class="check-label d-flex align-items-center gap-2">
                 <input type="checkbox" id="contactFavorite" class="form-check-input fav-check m-0" />
@@ -267,8 +242,6 @@
         </div>
       </div>
     </div>
-    <!-- End contact modal -->
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/sweetalert2.all.min.js"></script>
     <script src="js/main.js"></script>
