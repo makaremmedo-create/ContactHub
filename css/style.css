@@ -201,7 +201,6 @@ header .profile img {
         height: 40px;
     }
 }
-/* end header */
 
 main {
     padding-block: 24px;
@@ -213,7 +212,6 @@ main {
     }
 }
 
-/* start stats */
 .stats {
     margin-bottom: 32px;
 }
@@ -301,9 +299,7 @@ main {
         line-height: 32px;
     }
 }
-/* end stats */
 
-/* start contacts */
 .content-wrapper {
     gap: 32px;
 }
@@ -371,7 +367,6 @@ main {
 }
 
 .contact-card {
-    /* border: 1px solid red; */
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     border: 1px solid var(--border-color);
@@ -599,9 +594,7 @@ main {
     color: #9ca3af;
     font-size: 14px;
 }
-/* end contacts */
 
-/* start avatars */
 .avatar {
     object-fit: cover;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -680,9 +673,8 @@ main {
     background-color: #f43f5e;
     bottom: -2px;
 }
-/* end avatars */
 
-/* start sidebar */
+
 .sidebar {
     top: 112px;
     position: sticky;
@@ -747,7 +739,6 @@ main {
 }
 
 .side-item {
-    /* margin-bottom: 12px; */
     border-radius: 12px;
     cursor: pointer;
     padding: 10px;
@@ -808,9 +799,7 @@ main {
     font-size: 14px;
     color: #9ca3af;
 }
-/* end sidebar */
 
-/* start mobile lists */
 .mobile-lists {
     margin-top: 32px;
 }
@@ -898,9 +887,7 @@ main {
     color: #e11d48;
     background-color: #ffe4e6;
 }
-/* end mobile lists */
 
-/* start modal */
 .modal-backdrop.show {
     background-color: rgba(17, 24, 39, 0.6);
     backdrop-filter: blur(4px);
@@ -1126,7 +1113,6 @@ main {
     color: white !important;
     box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.25), 0 4px 6px -4px rgba(139, 92, 246, 0.25);
 }
-/* end modal */
 
 .hide {
     display: none;
